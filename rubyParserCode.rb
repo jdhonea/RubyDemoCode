@@ -11,6 +11,6 @@ while (x <= cutoff)
 end
 STR
 puts code
-pp Ripper.lex(code)
+pp Ripper.sexp(code)
 
 
