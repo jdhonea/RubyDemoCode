@@ -1,5 +1,5 @@
 def checkForNoDivisors(num)
-    for i in 2 .. Math.sqrt(num).floor
+    for i in 2 .. (Math.sqrt(num).floor)
         if num % i == 0
             return false
         end
@@ -7,12 +7,12 @@ def checkForNoDivisors(num)
     return true
 end
 
-count = 0
-current = 1
-while count < 1001
+count = 1
+current = 2
+while count < 10001
+    current += 1
     if checkForNoDivisors(current)
         count += 1
     end
-    current += 1
 end
 puts current
